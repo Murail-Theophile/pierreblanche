@@ -29,6 +29,18 @@ a{
 a:nth-child(1){grid-area:grades;background-image:url(2025/grades_thumb.avif)}
 a:nth-child(2){grid-area:left;background-image:url(2025/left_thumb.avif)}
 a:nth-child(3){grid-area:right;background-image:url(2025/right_thumb.avif)}
+a:nth-child(4){position: absolute;
+  top: 80vh;       /* Positionné à 80% de la hauteur visible */
+  left: 50%;       /* Centre horizontal */
+  transform: translateX(-50%); /* Ajuste le centrage */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(45deg, #f39c12, #e74c3c);
+  box-shadow: 0 0 15px rgba(231, 76, 60, 0.7);
+  cursor: pointer;
+  font-weight: bold;
+}   
 a:not(:hover) img{opacity:.9}
 </style>
 </head>
@@ -36,5 +48,6 @@ a:not(:hover) img{opacity:.9}
 <a href="2025/cotations">Cotations</a>
 <a href="2025/left">Gauche</a>
 <a href="2025/right">Droite</a>
+<a href="2025/bonus">+</a>
 </body>
 </html>
